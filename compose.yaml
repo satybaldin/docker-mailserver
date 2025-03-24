@@ -45,4 +45,4 @@ services:
 # Ensure that you properly `chmod 600` and `chown 0:0` the file on disk. Effectively treated as a bind mount.
 secrets:
   cloudflare-api-token:
-    file: ./docker-data/certbot/secrets/cloudflare.ini
+    file: ./certbot/secrets/cloudflare.ini
