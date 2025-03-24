@@ -20,8 +20,8 @@ services:
       - ./docker-data/dms/mail-logs/:/var/log/mail/
       - ./docker-data/dms/config/:/tmp/docker-mailserver/
       - /etc/localtime:/etc/localtime:ro
-      - /etc/dokploy/traefik/dynamic/certificates/certificate-override-cross-platform-alarm-spyrdd/chain.crt:/etc/letsencrypt/live/mail.leisheng.io/fullchain.pem:ro
-      - /etc/dokploy/traefik/dynamic/certificates/certificate-override-cross-platform-alarm-spyrdd/privkey.key:/etc/letsencrypt/live/mail.leisheng.io/privkey.pem:ro
+      - /etc/dokploy/traefik/dynamic/certificates/certificate-parse-open-source-microchip-238jc6/chain.crt:/etc/letsencrypt/live/mail.leisheng.io/fullchain.pem:ro
+      - /etc/dokploy/traefik/dynamic/certificates/certificate-parse-open-source-microchip-238jc6/privkey.key:/etc/letsencrypt/live/mail.leisheng.io/privkey.pem:ro
     restart: always
     stop_grace_period: 1m
     # Uncomment if using `ENABLE_FAIL2BAN=1`:
