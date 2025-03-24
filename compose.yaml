@@ -33,7 +33,7 @@ services:
 
   certbot-cloudflare:
     image: certbot/dns-cloudflare:latest
-    command: certonly --dns-cloudflare --dns-cloudflare-credentials /run/secrets/cloudflare-api-token -d mail.leisheng.io
+    command: certonly --dns-cloudflare --dns-cloudflare-credentials /run/secrets/cloudflare-api-token -d mail.leisheng.io --non-interactive --agree-tos --email postmaster@leisheng.io
     volumes:
       - ./docker-data/certbot/certs/:/etc/letsencrypt/
       - ./docker-data/certbot/logs/:/var/log/letsencrypt/
